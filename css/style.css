@@ -111,17 +111,12 @@ body {
 }
 
 #social {
-    margin: auto;
     padding-top: 20px;
-    padding-bottom: 15px;
 }
 
 #social a{
-    background-image: url(img/social-bg.png);
-    padding: 8px 14px;
-    background-position: center;
-    background-repeat: repeat-y;
-    font-size: 25px;
+    padding: 8px;
+    font-size: 1.5em;
     color: var(--branco);
 }
 
@@ -129,6 +124,8 @@ body {
     background-color: var(--roxo);
     padding: 10px;
     border-radius: 50%;
+    width: 25px;
+    height: 25px;
 }
 
 /* CONTEÚDO */
@@ -213,8 +210,14 @@ body {
     font-size: 1em;
     color: var(--roxo);
     word-wrap: break-word;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3) ;
+    transition: 0.5s;
 }
 
+.item:hover {
+    box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.3) ;
+    transition: 0.5s;
+}
 .flex {
     display: flex;
     flex-wrap: wrap;
@@ -225,16 +228,15 @@ body {
 
 #item1 {
     background-image: linear-gradient(
-        rgba(0, 0, 0, 0.8),
-        rgba(0, 0, 0, 0.8)
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.9)
       ),url(../img/projeto1.png);
     background-position: center;
     color: var(--branco); 
-    font-size: 20px;
+    font-size: 23px;
     text-transform: uppercase;
     font-weight: bold;
 }
-
 
 #footer {
     font-family: 'Open Sans', sans-serif;
@@ -246,4 +248,3 @@ body {
     padding: 10px;
     margin-top: 100px;
 }
-
