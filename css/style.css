@@ -1,116 +1,21 @@
-:root {
-    --verde: #00ad9b;
-    --roxo: #715aff;
-    --branco: #eeeefb;
-    --main: #e9e9e9;
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-}
-a {
-    color: white;
-}
-body {
-    background-color: var(--main);
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    justify-content: center;
-    min-width: 500px;
-}
-
-::-moz-selection { /* Code for Firefox */
-    color: white;
-    background: var(--verde);
-}
-  
-::selection {
-    color: white;
-    background: var(--verde);
-}
-
-/* FONTES
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Josefin Sans', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    */
-
-/* GERAL */
-
-#main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-    min-width: 485px;
-}
-
-/* TOPO */
-
-nav {
-    text-align: right;
-    height: 50px;
-    background: var(--roxo);
-    order: 1;
-}
-
-nav li {
-    display: inline-block;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-nav li a{
-    text-decoration: none;
-    color: var(--branco);
-    font-size: 14px;
-    padding: 18px;
-}
-
-nav li a:hover{
-    background-color: var(--verde);
-    margin-bottom: 18px;
-}
-
-header {
+.intro-2 {
     text-align: center;
-    height: 450px;
+    height: 400px;
     order: 2;
-    padding-top: 100px;
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.8),
-        rgba(0, 0, 0, 0.8)
-      ), url(../img/code.jfif);
-      background-size:  cover;
+    padding-top: 50px;
+    background-image: url("../img/gradient-squares.png");
+    background-color: #715aff;
 }
-
-header h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 2em;
-    color: var(--roxo);
-    text-transform: uppercase;
-}
-
 #avatar img {
-    border-radius: 50%;
-    border-color: var(--verde);
+    border-color: white;
     border-width: 3px;
     border-style: solid;
 }
 
-header h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.4em;
-    font-weight: 400;
-    color: var(--verde);
-    max-width: 350px;
-    margin: 0 auto;
-    padding: 5px;
+header h1 {
+    padding-top: 10px;
+    text-transform: uppercase;
+    color: white;
 }
 
 #social {
@@ -124,97 +29,30 @@ header h2 {
 }
 
 #social i{
-    background-color: var(--roxo);
+    background-color: white;
     padding: 10px;
     border-radius: 50%;
-    width: 25px;
-    height: 25px;
+    width: 45px;
+    height: 45px;
 }
 
-/* CONTEÚDO */
-
-#about {
-    order: 3;
-    width: 63%;
-    align-self: center;
-    font-family: 'Montserrat';
-    font-size: 2.2em;
-    margin-top: 40px;
-    margin-bottom: 10px;
-    color: var(--verde);
-    font-weight: 300;
+#social i {
+    color: #715aff;
 }
 
-
-#content__1 {
-    order: 4;
-    width: 63%;
-    align-self: center;
-    padding-bottom: 20px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#content__1 p{
-    order: 1;
-    color: var(--roxo);
-    font-size: 22px;
-    width: 60%;
-    min-width: 300px;
-    margin-bottom: 20px;
-    text-align: justify;
-
-}
-
-#content__1 img {
-    order: 2;
-    width: 300px;
-    height: 155px;
-    min-width: 300px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-#content__2 {
-    order: 6;
-    background-color: var(--roxo);
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-#content__2 p{
-    order: 2;
-    width: 63%;
-    font-size: 22px;;
-    margin: 0 auto;
-    color: var(--branco);
-}
-
-#projects {
-    order: 5;
-    width: 63%;
-    align-self: center;
-    font-family: 'Montserrat';
-    font-size: 2.2em;
-    margin: 0 auto;
-    color: var(--branco);
-    font-weight: 300;
-    padding-top: 15px;
-}
-
-/* THUMBNAIL STYLE */
+/* Thumbnails */
 
 #thumbnail__holder {
     width: 100%;
-    background-color: var(--roxo);
+    background-image: url("../img/gradient-squares.png");
+    background-color: #715aff;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
     position: relative;
+
 }
 
 .thumbnail {
@@ -274,126 +112,3 @@ header h2 {
     background-position: center;
     background-size: cover;
 }
-
-/* FOOTER */
-
-footer {
-    font-family: 'Open Sans', sans-serif;
-    order: 8;
-    font-size: 0.9em;
-    text-transform: uppercase;
-    background: #715aff;
-    text-align: center;
-    color: white;
-    padding: 10px;
-}
-
-/*  RESPONSIVENESS */
-
-@media all and (max-width: 500px) {
-    
-    nav {
-        text-align: center;
-        height: 50px;
-        background: var(--roxo);
-        order: 1;
-    }
-
-    #content__1 {
-        order: 4;
-        width: 100%;
-        align-self: center;
-        padding-bottom: 20px;
-        display: flex;
-        flex-flow: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #content__1 p{
-        order: 1;
-        color: var(--roxo);
-        font-size: 22px;
-        width: 90%;
-        min-width: 300px;
-        margin-bottom: 20px;
-        text-align: justify;
-        margin: auto 0;
-    }
-
-    #about {
-        order: 3;
-        width: 90%;
-        align-self: center;
-        font-family: 'Montserrat';
-        font-size: 2.5em;
-        margin-top: 40px;
-        margin-bottom: 10px;
-        color: var(--verde);
-        font-weight: 300;
-    }
-
-    #content__1 img {
-        order: 2;
-        width: 400px;
-        height: 230px;
-        min-width: 300px;
-        margin-top: 50px;
-        margin-bottom: 20px;
-    }
-
-  }
-
-  @media all and (max-width: 1200px) {
-    
-    nav {
-        text-align: center;
-        height: 50px;
-        background: var(--roxo);
-        order: 1;
-    }
-
-    #content__1 {
-        order: 4;
-        width: 100%;
-        align-self: center;
-        padding-bottom: 20px;
-        display: flex;
-        flex-flow: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #content__1 p{
-        order: 1;
-        color: var(--roxo);
-        font-size: 22px;
-        width: 80%;
-        min-width: 300px;
-        margin-bottom: 20px;
-        text-align: justify;
-        margin: auto 0;
-    }
-
-    #about {
-        order: 3;
-        width: 80%;
-        align-self: center;
-        font-family: 'Montserrat';
-        font-size: 2.5em;
-        margin-top: 40px;
-        margin-bottom: 10px;
-        color: var(--verde);
-        font-weight: 300;
-    }
-
-    #content__1 img {
-        order: 2;
-        width: 400px;
-        height: 230px;
-        min-width: 300px;
-        margin-top: 50px;
-        margin-bottom: 20px;
-    }
-
-  }

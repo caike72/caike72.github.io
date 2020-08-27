@@ -1,120 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta id="viewport" name="viewport">
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <script type="text/javascript">
-            //mobile viewport hack
-            (function(){
+    <!-- Estilo CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 
-            function apply_viewport(){
-                if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)   ) {
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-                var ww = window.screen.width;
-                var mw = 500; // min width of site
-                var ratio =  ww / mw; //calculate ratio
-                var viewport_meta_tag = document.getElementById('viewport');
-                if( ww < mw){ //smaller than minimum size
-                    viewport_meta_tag.setAttribute('content', 'initial-scale=' + ratio + ', maximum-scale=' + ratio + ', minimum-scale=' + ratio + ', user-scalable=no, width=' + mw);
-                }
-                else { //regular size
-                    viewport_meta_tag.setAttribute('content', 'initial-scale=1.0, maximum-scale=1, minimum-scale=1.0, user-scalable=yes, width=' + ww);
-                }
-                }
-            }
-
-            //ok, i need to update viewport scale if screen dimentions changed
-            window.addEventListener('resize', function(){
-                apply_viewport();
-            });
-
-            apply_viewport();
-
-            }());
-        </script>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Montserrat&family=Open+Sans:wght@300;400;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+    <!-- Favicon -->
     <link rel="icon" href="img/codigo.png" type="image/png" sizes="16x16"> 
+
     <title>Caike Laurentino - HTML e CSS</title>
-</head>
-<body>
-    <div id="main">
+  </head>
+  <body>
+    <!-- Container-->
+    <div class="container-fluid" style="margin: 0; padding: 0;">
 
-        <nav>
-            <ul>
-                <li><a href="#about">Quem sou</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #715aff;">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="#about">Quem sou</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projetos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#contact">Contato</a>
+              </li>
             </ul>
+          </div>
         </nav>
-
+        <!-- Header -->
         <header>
-
-            <div id="avatar">
-                <a href="index.html">
-                <img src="img/avatar.png" alt="foto de perfil">
-                </a>
+          <div class="view intro-2 ">
+            <div class="full-bg-img">
+              <div class="mask rgba-black-light flex-center">
+                <div class="container text-center white-text">
+                  <div class="white-text text-center wow fadeInUp">
+                      <div id="avatar">
+                          <a href="index.html">
+                          <img class="rounded-circle" src="img/avatar.png" alt="foto de perfil">
+                          </a>
+                      </div>
+                          <h1>Caike Laurentino</h1>
+          
+                      <div id="social">
+                          <a href="https://twitter.com/IceIceBbi" target="_blank"><i class="fab fa-twitter"></i></a>
+                          <a href="https://www.instagram.com/cdlaurentino/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                          <a href="https://github.com/caike72"><i class="fab fa-github" aria-hidden="true"></i></a>
+                          <a href="https://www.linkedin.com/in/caike-laurentino-4085a91b4/"><i class="fab fa-linkedin-in"></i></a>
+                          <a href="https://twitch.tv/tozeos/" target="_blank"><i class="fab fa-twitch" aria-hidden="true"></i></a>
+                      </div>
+                  </div>
+                </div>
+              </div>
             </div>
-                <h1>Caike Laurentino</h1>
-                <h2>Olá, sou desenvolvedor web e trabalho com HTML e CSS.</h2>
-
-            <div id="social">
-                <a href="mailto:caike129@gmai.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-                <a href="https://twitter.com/IceIceBbi" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/cdlaurentino/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href="https://github.com/caike72"><i class="fa fa-github" aria-hidden="true"></i></a>
-                <a href="https://twitch.tv/tozeos/" target="_blank"><i class="fa fa-twitch" aria-hidden="true"></i></a>
-            </div>
+          </div>
         </header>
-
-        <div id="about"><i class="fa fa-bookmark" aria-hidden="true"></i> Quem sou</div>
-            <div id="content__1">
-            
-                <p>
-                    Olá, meu nome é Caike Laurentino, tenho 22 anos de idade e sou um programador autodidata. Atualmente, estudo Letras em Língua Inglesa na Universidade Estadual da Bahia (UNEB). Recentemente, comecei a estudar <strong>HTML</strong> e <strong>CSS</strong> e me apaixonei pelo conteúdo.<br>
-                        <br>
-                    Por ainda ser novo no ramo, estou trabalhando apenas com essas duas bases, o que possibilita, em primeiro momento, somente a criação de <strong>páginas estáticas</strong>. Estas páginas estáticas são normalmente utilizadas em sites sobre <i>fotografia</i>, <i>organizações</i>, <i>eventos</i>, etc.
-                </p>
-
-                    <img src="img/html5_css3.png">
-
+        <div class="container">
+          <div class="row pt-5">
+            <!-- About -->
+            <div class="col-sm-8 ">
+              <h1 style="color: #00ad9b;"><i class="fas fa-angle-right" id="about"></i>&nbsp;</i>Quem sou</h1>
+              <p class="text-justify" style="color: #715aff; font-size: 22px;">Olá, meu nome é Caike Laurentino, tenho 22 anos de idade e sou um programador autodidata. Atualmente, estudo Letras em Língua Inglesa na <strong>Universidade Estadual da Bahia (UNEB)</strong>. Recentemente, comecei a estudar <strong>HTML</strong> e <strong>CSS</strong> e me apaixonei pelo conteúdo.</p>
+              
+              <p class="text-justify pb-5" style="color: #715aff; font-size: 22px;">Por ainda ser novo no ramo, estou trabalhando apenas com essas duas bases, o que possibilita, em primeiro momento, somente a criação de páginas estáticas. Estas páginas estáticas são normalmente utilizadas em sites sobre fotografia, organizações, eventos, etc.</p>
             </div>
-
-        <div id="content__2">
-
-            <div id="projects"><i class="fa fa-bookmark" aria-hidden="true"></i> Projetos</div>
-
-                <p>
-                    Abaixo listo alguns dos tabalhos que desenvolvi. Sinta-se à vontade para vê-los ao vivo.
-                </p>
-
-                    <section id="thumbnail__holder">
-
-                        <a class="thumbnail" id="background1" target="_blank" href="https://caike72.github.io/ubr/">
-                            <h4>União Brasileira de Regiões</h4>
-                        </a>
-                
-                        <a class="thumbnail" id="background2" target="_blank" href="#">
-                            <h4>Vazio</h4>
-                        </a>
-                
-                        <a class="thumbnail" id="background3" target="_blank" href="#">
-                            <h4>Vazio</h4>
-                        </a>
-                
-                        <a class="thumbnail" id="background4" target="_blank" href="#">
-                            <h4>Vazio</h4>
-                        </a>
-        
-            </section>
+            <!-- Image -->
+            <div class="col-sm-4 pb-5 text-center d-flex align-items-center justify-content-center">
+              <img src="/img/html5_css3.png" width="350" height="200">
+              
+            </div>
+            <!--Little infos -->
+              <div class="col-sm justify-content-center text-center pb-5" style="color: #715aff;">
+                <i class="fas fa-laptop-code" style="font-size: 50px;"></i>
+                <p class="text-justify pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam, arcu id sodales tincidunt, neque turpis suscipit quam, quis porttitor felis neque sed lectus.</p>
+              </div>
+              <div class="col-sm justify-content-center text-center pb-5" style="color: #715aff;">
+                <i class="fas fa-palette" style="font-size: 50px;"></i>
+                <p class="text-justify pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam, arcu id sodales tincidunt, neque turpis suscipit quam, quis porttitor felis neque sed lectus.</p>
+              </div>
+              <div class="col-sm justify-content-center text-center pb-5" style="color: #715aff;">
+                <i class="fas fa-star" style="font-size: 50px;"></i>
+                <p class="text-justify pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam, arcu id sodales tincidunt, neque turpis suscipit quam, quis porttitor felis neque sed lectus.</p>
+              </div>
+          </div>
         </div>
+        <!-- cards -->
+          <section id="thumbnail__holder" class="pb-2">
+            <div class="container" id="projects">
+              <h1 style="color: #ffffff;" class="pt-5 text-left col-sm-12"><i class="fas fa-angle-right"></i>&nbsp;</i>Projetos</h1>
+            </div>
+            
+            <div class="col-sm-12">
+              <a class="thumbnail" id="background1" target="_blank" href="https://caike72.github.io/ubr/">
+                  <h4>União Brasileira de Regiões</h4>
+              </a>
+      
+              <a class="thumbnail" id="background2" target="_blank" href="http://www.google.com">
+                  <h4>Vazio</h4>
+              </a>
+      
+              <a class="thumbnail" id="background3" target="_blank" href="http://www.google.com">
+                  <h4>Vazio</h4>
+              </a>
 
-        <footer>
-            Desenvolvido com <i class="fa fa-heart-o" aria-hidden="true"></i> por <strong>Caike Laurentino</strong>.
-        </footer>
-
+              <a class="thumbnail" id="background4" target="_blank" href="#">
+                <h4>Vazio</h4>
+            </a>
+            </div>
+            <footer>
+              <!-- Copyright -->
+              <footer style="color: white;">
+                Desenvolvido com <i class="fas fa-heart"></i> por Caike Laurentino
+              </footer>
+              <!-- Copyright -->
+            </footer>
+        </section>
+        
     </div>
-</body>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
 </html>
