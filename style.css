@@ -1,0 +1,18 @@
+.h {
+  height: 100vh;
+}
+
+.avatar {
+    border-color: #ee2b47;
+    border-width: 4px;
+    border-style: solid;
+}
+
+p a {
+    color: #ee2b47;
+}
+
+p a:hover {
+    color: #ee2b47;
+}
+
