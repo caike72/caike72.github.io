@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* a {
+  text-decoration: none;
+}
+
+main {
+  background: #8576d4;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .container {
+  min-height: 100vh;
+  width: 100%;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .container .dashboard {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  background: #E1DEF4;
+}
+
+main .container .dashboard .navigation a {
+  cursor: pointer;
+  display: block;
+  padding: 0.3rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+main .container .dashboard .navigation a:hover {
+  color: #6B4FFE;
+  background: #CCC6EC;
+  border-radius: .5rem;
+}
+
+main .container .dashboard .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .container .dashboard .links .link {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+main .container .dashboard .links .link i {
+  margin: 0.5rem;
+  font-size: 1.2rem;
+  color: #333333;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+main .container .dashboard .links .link i:hover {
+  color: #6B4FFE;
+}
+
+main .container .dashboard .pfp {
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid #6B4FFE;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+main .container .dashboard h3 {
+  font-size: 1.2rem;
+}
+
+main .occupation {
+  font-style: italic;
+  font-size: .85rem;
+}
+
+main .donate {
+  background: #CCC6EC;
+  color: #6B4FFE;
+  font-weight: bold;
+  font-size: 0.8rem;
+  border-radius: .8rem;
+  padding: 1rem;
+  width: 70%;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+main .donate:hover {
+  background: #6B4FFE;
+  color: #fff;
+}
+
+main .projects-info {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  background: #fff;
+  border-radius: 1.2rem;
+}
+
+main .projects-info .title {
+  text-align: center;
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+main .projects-info .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .projects-info .cards .doggo {
+  width: 20rem;
+}
+
+main .projects-info .cards .info {
+  margin: 0px auto;
+  margin-bottom: .7rem;
+  padding: 15px;
+  width: 90%;
+  margin: 0px auto;
+  margin-bottom: .7rem;
+  padding: 15px;
+  width: 90%;
+  border-radius: .5rem;
+}
+
+main .projects-info .cards .info p {
+  padding-bottom: 1rem;
+}
+
+main .projects-info .cards .card-info {
+  margin: 0px auto;
+  margin-bottom: .7rem;
+  padding: 15px;
+  width: 90%;
+  border: 1px solid #6B4FFE;
+  border-radius: .5rem;
+}
+
+main .projects-info .cards .card-info a {
+  font-size: 1.4rem;
+  color: #6B4FFE;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+main .projects-info .cards .card-info a:hover {
+  color: #333333;
+}
+
+main .projects-info .cards .card-info p {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+main .projects-info .cards .card-info .demo {
+  font-size: .6rem;
+  background: crimson;
+  padding: .2rem;
+  border-radius: .3rem;
+  color: #fff;
+  font-weight: bold;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+main .projects-info .cards .card-info .demo:hover {
+  color: #ad1432;
+  background: #ff9cb0;
+}
+
+main .projects-info .cards .card-info .technologies {
+  font-size: .6rem;
+  background: #6B4FFE;
+  padding: .2rem;
+  border-radius: .3rem;
+  color: #fff;
+  font-weight: bold;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+main .projects-info .cards .card-info .technologies:hover {
+  color: #6B4FFE;
+  background: #CCC6EC;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    background: #8576d4;
+    font-family: "Poppins", sans-serif;
+    color: #333333;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-width: 280px;
+  }
+  main .container {
+    background: white;
+    background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.3)));
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .container .dashboard {
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    text-align: center;
+    background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.3)));
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  }
+  main .projects-info {
+    margin: 0px auto;
+    background: #fff;
+    border-radius: 0;
+  }
+  main .projects-info .title {
+    text-align: center;
+    margin: 1rem;
+    font-size: 2rem;
+  }
+  main .projects-info .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .projects-info .cards .doggo {
+    width: 15rem;
+  }
+  main .projects-info .cards .info {
+    margin: 0px auto;
+    margin-bottom: .7rem;
+    padding: 15px;
+    width: 90%;
+  }
+  main .projects-info .cards .card-info {
+    margin: 0px auto;
+    margin-bottom: .7rem;
+    padding: 15px;
+    width: 90%;
+    border: 1px solid #6B4FFE;
+    border-radius: .5rem;
+  }
+  main .projects-info .cards .card-info a {
+    font-size: 1.4rem;
+    color: #6B4FFE;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+  }
+  main .projects-info .cards .card-info a:hover {
+    color: #333333;
+  }
+  main .projects-info .cards .card-info p {
+    font-size: 0.8rem;
+    font-style: italic;
+  }
+  main .projects-info .cards .card-info .technologies {
+    font-size: .6rem;
+    background: #6B4FFE;
+    padding: .2rem;
+    border-radius: .3rem;
+    color: #fff;
+    font-weight: bold;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    cursor: pointer;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+  }
+  main .projects-info .cards .card-info .technologies:hover {
+    color: #6B4FFE;
+    background: #CCC6EC;
+  }
+}
+
+@media only screen and (min-width: 1115px) {
+  main .container {
+    min-height: 85vh;
+    width: 80%;
+    border-radius: 1.2rem;
+  }
+  main .container .dashboard {
+    border-radius: 1.2rem 0 0 1.2rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
