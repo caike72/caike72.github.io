@@ -5,6 +5,16 @@
           box-sizing: border-box;
 }
 
+* ::-moz-selection {
+  color: #6B4FFE;
+  background: #CCC6EC;
+}
+
+* ::selection {
+  color: #6B4FFE;
+  background: #CCC6EC;
+}
+
 * a {
   text-decoration: none;
 }

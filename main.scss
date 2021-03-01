@@ -12,6 +12,11 @@ $purple2: #CCC6EC;
   padding: 0;
   box-sizing: border-box;
 
+  ::selection {
+    color: $purple1;
+    background: $purple2;
+  }
+
   a {
     text-decoration: none;
   }
